@@ -242,14 +242,12 @@
     <!-- contact -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form id="contact-form">
-            <div class="input-box">
-                <input type="text" name="entry.1035117768" placeholder="Name" required>
-                <input type="email" name="entry.1511646815" placeholder="Email" required>
-                <input type="number" name="entry.727458429" placeholder="Phone Number" required>
-                <input type="text" name="entry.220288762" placeholder="Subject">
-            </div>
-            <textarea name="entry.1236819608" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="bb0d4da1-5f9d-439f-9358-d0c98ac65b0b">
+            <input type="text" name="name" placeholder="Họ và tên" required>
+            <input type="number" name="Phone Number" placeholder="Số điện thoại" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" cols="30" rows="10" placeholder="Lời nhắn của bạn"></textarea>
             <input type="submit" value="Send Message" class="btn">
         </form>
     </section>
