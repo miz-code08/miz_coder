@@ -15,7 +15,7 @@
     --second-bg-color: #161616;
     --text-color:#fff;
     --main-color: #f14f31;
-    /* --main-color: #8b2e20; */
+    /* --main-color: #c72020; */
 }
 html {
     font-size: 62.5%;
@@ -27,13 +27,17 @@ body {
     color: var(--text-color);
 }
 html::-webkit-scrollbar {
-    width: 0.8rem;  
+    width: 0.8rem;      
 }
 html::-webkit-scrollbar-track {
     background: var(--bg-color);
 }
 html::-webkit-scrollbar-thumb {
-    background: var(--main-color)
+    background: var(--main-color);
+    border-radius: 6px;
+}
+html::-webkit-scrollbar-thumb:hover {
+    background: #b82f17;
 }
 /* ================================================Header================================================ */
 .header {
@@ -298,7 +302,7 @@ span {
 }
 .service-box {
     background-color: var(--main-color);
-    height: 300px;
+    height: 250px;
     border-radius: 3rem;
     cursor: pointer;
     transition: 0.3s ease;
@@ -329,7 +333,7 @@ span {
     max-height: 100px;
     margin: auto;
 }
-@media (max-width:991px) {
+@media (max-width:895) {
     section {
         padding: 10rem 3% 2rem;
     }
@@ -391,7 +395,7 @@ span {
     font-weight: 500;
     margin-left: 0.5rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 895px) {
     .skills .container {
         margin: 0;
         padding: 0;
@@ -585,7 +589,7 @@ span {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 40px 0 10px;
     background-color: var(--main-color);
 }
 .footer .social {
@@ -632,10 +636,12 @@ span {
     padding: 0 15px;
 }
 footer .copyright {
-    margin-top: 50px;
+    margin-top: 20px;
+    padding-top: 10px;
     text-align: center;
     font-size: 16px;
     color: black;
+    border-top: 1px solid #000;
 }
 
 @media (max-width: 1285px) {
